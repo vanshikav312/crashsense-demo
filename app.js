@@ -16,8 +16,8 @@ app.use(express.json());
 //  Replace dashboardUrl and apiKey with your running values.
 app.use(
   crashsense({
-    dashboardUrl: 'https://crashsense-backend.onrender.com', // ← your dashboard server
-    apiKey: 'dev-secret-key-change-this',                   // ← your CRASHSENSE_API_KEY
+    dashboardUrl: 'https://crashsense-backend.onrender.com',
+    apiKey: 'b488150044a185491beb5353a403e95b9e7bd409492b16a7', // demo@crashsense.dev API key
     projectId: 'crashsense-demo',
   })
 );
