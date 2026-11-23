@@ -60,9 +60,8 @@ app.get('/crash/async-error', async (req, res, next) => {
       new Error('Database connection timed out after 30s — pool exhausted')
     ); // 💥 Async Error
   } catch (err) {
-    next(err); // forward to Express error handler → CrashSense picks it up
+    return next(err); // return stops execution — prevents ERR_HTTP_HEADERS_SENT
   }
-  res.json({ ok: true });
 });
 
 // ─── 4. Express Error Handler ────────────────────────────────
