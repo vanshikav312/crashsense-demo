@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(
   crashsense({
     dashboardUrl: 'https://crashsense-backend.onrender.com',
-    apiKey: 'b488150044a185491beb5353a403e95b9e7bd409492b16a7', // demo@crashsense.dev API key
+    apiKey: '1bad380b70b982b68461d48f3c762b8cec401331db8418c4', // vanshika@crashsense.dev API key
     projectId: 'crashsense-demo',
   })
 );
